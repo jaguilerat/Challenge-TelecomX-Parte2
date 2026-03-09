@@ -1,8 +1,6 @@
 ---
 title: "Telecom X – Predicción de Cancelación de Clientes (Churn)"
 author: "Johnnatan Aguilera"
-date: "`r Sys.Date()`"
-output: github_document
 ---
 
 # 📊 Telecom X – Predicción de Cancelación de Clientes
