@@ -38,3 +38,65 @@ Este proyecto tiene como propósito desarrollar un modelo predictivo de cancelac
 ---
 
 # 📂 Estructura del Proyecto
+
+
+telecomx-churn-prediction/
+│
+├── data/
+│ └── datos_tratados_telecomx.csv
+│
+├── notebooks/
+│
+├── src/
+│
+├── README.Rmd
+│
+└── requirements.txt
+
+
+---
+
+# 📥 Carga de Librerías
+
+```python
+import pandas as pd
+import numpy as np
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import roc_auc_score
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+📥 Carga de Datos
+df = pd.read_csv("/content/datos_tratados_telecomx.csv")
+
+df.head()
+🔎 Exploración Inicial de Datos
+df.info()
+df.describe()
+
+Verificación de valores nulos:
+
+df.isnull().sum()
+
+
+📊 Análisis de Correlación
+
+El análisis de correlación permite identificar qué variables tienen mayor relación con la cancelación de clientes.
+
+plt.figure(figsize=(12,8))
+
+sns.heatmap(df.corr(),
+            cmap="coolwarm",
+            annot=False)
+
+plt.title("Matriz de Correlación")
+plt.show()
+
+Este análisis permite identificar variables relevantes que podrían influir en el abandono de clientes.
