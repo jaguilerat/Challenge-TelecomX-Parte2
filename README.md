@@ -39,28 +39,26 @@ Este proyecto tiene como propósito desarrollar un modelo predictivo de cancelac
 
 # 📂 Estructura del Proyecto
 
+---
 
 telecomx-churn-ml/
 │
 ├── data/
-│ ├── raw
-│ ├── processed
+│   ├── raw/
+│   └── processed/
 │
-├── notebooks
+├── notebooks/
 │
-├── src
-│ ├── preprocessing.py
-│ ├── train.py
-│ ├── predict.py
+├── src/
+│   ├── preprocessing.py
+│   ├── train.py
+│   └── predict.py
 │
-├── models
+├── models/
 │
-├── reports
+├── reports/
 │
 └── README.md
-
-
----
 
 # 📥 Carga de Librerías
 
