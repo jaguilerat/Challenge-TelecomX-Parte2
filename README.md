@@ -36,29 +36,14 @@ Este proyecto tiene como propósito desarrollar un modelo predictivo de cancelac
 - **RMarkdown** para documentación reproducible
 
 ---
-
 # 📂 Estructura del Proyecto
 
----
-
-telecomx-churn-ml/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
+telecomx-parte2/
 │
 ├── notebooks/
-│
 ├── src/
-│   ├── preprocessing.py
-│   ├── train.py
-│   └── predict.py
-│
-├── models/
-│
-├── reports/
-│
 └── README.md
+---
 
 # 📥 Carga de Librerías
 
